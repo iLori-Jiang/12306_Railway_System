@@ -1,2 +1,2 @@
 # 12306_Railway_System
-A Database course project
+A railway information and ticketing system. GUI built by JAVAFX; run by JAVA; database built by PostgreSQL.
