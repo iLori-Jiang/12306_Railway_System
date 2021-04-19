@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicketWindow.TicketWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dcdca" height="116.0" layoutX="-1.0" layoutY="-9.0" stroke="#ffd1d1" strokeType="INSIDE" strokeWidth="0.0" width="511.0" />
+      <Button fx:id="HomeButton" alignment="CENTER" layoutX="20.0" layoutY="12.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="40.0" prefWidth="42.0" text="&lt;" textFill="#9dcdca">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <VBox layoutX="27.0" layoutY="133.0" prefHeight="560.0" prefWidth="457.0">
+         <children>
+            <AnchorPane fx:id="travel1" prefHeight="140.0" prefWidth="457.0">
+               <children>
+                  <Label fx:id="departDate1" layoutX="39.0" layoutY="57.0" prefHeight="26.0" prefWidth="122.0" text="2020-05-17" textFill="#727272">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departStation1" alignment="CENTER" layoutX="22.0" layoutY="17.0" prefHeight="26.0" prefWidth="105.0" text="深圳北" textFill="#9dcdca">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="train1" alignment="CENTER" layoutX="127.0" layoutY="12.0" prefHeight="19.0" prefWidth="87.0" text="C7180" textFill="#808080">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arriveStation1" alignment="CENTER" layoutX="211.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="深圳北">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="line1" endX="200.0" endY="32.0" fill="#9e9e9e" nodeOrientation="LEFT_TO_RIGHT" startX="140.0" startY="32.0" stroke="#979696" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                  <Label fx:id="type1" alignment="CENTER" layoutX="167.0" layoutY="59.0" prefHeight="23.0" prefWidth="87.0" text="一等座" textFill="#757575">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departTime1" layoutX="39.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="07 : 56">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seat1" alignment="CENTER" layoutX="150.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="05车4A座">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price1" alignment="CENTER" layoutX="317.0" layoutY="58.0" prefHeight="26.0" prefWidth="122.0" text="¥430.00" textFill="#ffa75e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="refund1" layoutX="334.0" layoutY="92.0" mnemonicParsing="false" onAction="#setRefund1" prefHeight="29.0" prefWidth="87.0" text="退票">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="travel2" prefHeight="140.0" prefWidth="457.0">
+               <children>
+                  <Label fx:id="departDate2" layoutX="39.0" layoutY="57.0" prefHeight="26.0" prefWidth="122.0" text="2020-05-17" textFill="#727272">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departStation2" alignment="CENTER" layoutX="22.0" layoutY="17.0" prefHeight="26.0" prefWidth="105.0" text="深圳北" textFill="#9dcdca">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="train2" alignment="CENTER" layoutX="127.0" layoutY="12.0" prefHeight="19.0" prefWidth="87.0" text="C7180" textFill="#808080">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arriveStation2" alignment="CENTER" layoutX="211.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="深圳北">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="line2" endX="200.0" endY="32.0" fill="#9e9e9e" nodeOrientation="LEFT_TO_RIGHT" startX="140.0" startY="32.0" stroke="#979696" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                  <Label fx:id="type2" alignment="CENTER" layoutX="167.0" layoutY="59.0" prefHeight="23.0" prefWidth="87.0" text="一等座" textFill="#757575">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departTime2" layoutX="39.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="07 : 56">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seat2" alignment="CENTER" layoutX="150.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="05车4A座">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price2" alignment="CENTER" layoutX="317.0" layoutY="58.0" prefHeight="26.0" prefWidth="122.0" text="¥430.00" textFill="#ffa75e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="refund2" layoutX="334.0" layoutY="92.0" mnemonicParsing="false" onAction="#setRefund2" prefHeight="29.0" prefWidth="87.0" text="退票">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="travel3" prefHeight="140.0" prefWidth="457.0">
+               <children>
+                  <Label fx:id="departDate3" layoutX="39.0" layoutY="57.0" prefHeight="26.0" prefWidth="122.0" text="2020-05-17" textFill="#727272">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departStation3" alignment="CENTER" layoutX="22.0" layoutY="17.0" prefHeight="26.0" prefWidth="105.0" text="深圳北" textFill="#9dcdca">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="train3" alignment="CENTER" layoutX="127.0" layoutY="12.0" prefHeight="19.0" prefWidth="87.0" text="C7180" textFill="#808080">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arriveStation3" alignment="CENTER" layoutX="211.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="深圳北">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="line3" endX="200.0" endY="32.0" fill="#9e9e9e" nodeOrientation="LEFT_TO_RIGHT" startX="140.0" startY="32.0" stroke="#979696" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                  <Label fx:id="type3" alignment="CENTER" layoutX="167.0" layoutY="59.0" prefHeight="23.0" prefWidth="87.0" text="一等座" textFill="#757575">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departTime3" layoutX="39.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="07 : 56">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seat3" alignment="CENTER" layoutX="150.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="05车4A座">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price3" alignment="CENTER" layoutX="317.0" layoutY="58.0" prefHeight="26.0" prefWidth="122.0" text="¥430.00" textFill="#ffa75e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="refund3" layoutX="334.0" layoutY="92.0" mnemonicParsing="false" onAction="#setRefund3" prefHeight="29.0" prefWidth="87.0" text="退票">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="travel4" prefHeight="140.0" prefWidth="457.0">
+               <children>
+                  <Label fx:id="departDate4" layoutX="39.0" layoutY="57.0" prefHeight="26.0" prefWidth="122.0" text="2020-05-17" textFill="#727272">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departStation4" alignment="CENTER" layoutX="22.0" layoutY="17.0" prefHeight="26.0" prefWidth="105.0" text="深圳北" textFill="#9dcdca">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="train4" alignment="CENTER" layoutX="127.0" layoutY="12.0" prefHeight="19.0" prefWidth="87.0" text="C7180" textFill="#808080">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arriveStation4" alignment="CENTER" layoutX="211.0" layoutY="16.0" prefHeight="26.0" prefWidth="105.0" text="深圳北">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="line4" endX="200.0" endY="32.0" fill="#9e9e9e" nodeOrientation="LEFT_TO_RIGHT" startX="140.0" startY="32.0" stroke="#979696" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                  <Label fx:id="type4" alignment="CENTER" layoutX="167.0" layoutY="59.0" prefHeight="23.0" prefWidth="87.0" text="一等座" textFill="#757575">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departTime4" layoutX="39.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="07 : 56">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seat4" alignment="CENTER" layoutX="150.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" text="05车4A座">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price4" alignment="CENTER" layoutX="317.0" layoutY="58.0" prefHeight="26.0" prefWidth="122.0" text="¥430.00" textFill="#ffa75e">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="refund4" layoutX="334.0" layoutY="92.0" mnemonicParsing="false" onAction="#setRefund4" prefHeight="29.0" prefWidth="87.0" text="退票">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="previousPageButton" alignment="CENTER" layoutX="158.0" layoutY="718.0" mnemonicParsing="false" onAction="#previousPage" text="&lt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextPageButton" alignment="CENTER" layoutX="292.0" layoutY="718.0" mnemonicParsing="false" onAction="#nextPage" text="&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="PageNumber" alignment="CENTER" layoutX="228.0" layoutY="727.0" prefHeight="24.0" prefWidth="42.0" text="页码" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="46.0" text="我的订单">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

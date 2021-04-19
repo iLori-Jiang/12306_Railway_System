@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TravelDetailWindow.TravelDetailWindowController">
+   <children>
+      <ScrollPane layoutX="35.0" layoutY="400.0" prefHeight="350.0" prefWidth="430.0">
+         <content>
+            <AnchorPane prefHeight="447.0" prefWidth="424.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="11.0" text="车站名称" textFill="#9dcdca">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="11.0" text="到达" textFill="#9dcdca">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="263.0" layoutY="11.0" text="出发" textFill="#9dcdca">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="351.0" layoutY="11.0" text="停留" textFill="#9dcdca">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="arriveTime2" layoutX="163.0" layoutY="45.0" text="20:55">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="departTime2" layoutX="259.0" layoutY="45.0" text="20:55">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="stay" layoutX="347.0" layoutY="45.0" text="20:55">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passing_station2" layoutX="32.0" layoutY="45.0" text="深圳北">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9dcdca" height="177.0" layoutY="-2.0" stroke="#ffd1d1" strokeType="INSIDE" strokeWidth="0.0" width="516.0" />
+      <Button fx:id="BackButton" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToPoemSelectWindow" prefHeight="37.0" prefWidth="44.0" text="&lt;" textFill="#9dcdca">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Line fx:id="line1" endX="265.0" endY="60.0" fill="WHITE" layoutX="30.0" layoutY="58.0" nodeOrientation="LEFT_TO_RIGHT" startX="180.0" startY="60.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+      <Label fx:id="arriveTime" alignment="CENTER" layoutX="360.0" layoutY="86.0" prefHeight="26.0" prefWidth="70.0" text="06 : 10" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="arriveStation" alignment="CENTER" layoutX="339.0" layoutY="122.0" prefHeight="26.0" prefWidth="110.0" text="深圳北" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="train" alignment="CENTER" layoutX="207.0" layoutY="124.0" prefHeight="19.0" prefWidth="87.0" text="C7180" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="CENTER" layoutX="192.0" layoutY="90.0" prefHeight="19.0" prefWidth="116.0" text="05月17日" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="departStation" alignment="CENTER" layoutX="60.0" layoutY="122.0" prefHeight="26.0" prefWidth="110.0" text="深圳北" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="departTime" alignment="CENTER" layoutX="83.0" layoutY="85.0" prefHeight="26.0" prefWidth="70.0" text="06 : 10" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="24.0" text="车次详情" textFill="#fffefe">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="type1" alignment="CENTER" layoutX="39.0" layoutY="204.0" prefHeight="23.0" prefWidth="70.0" text="二等座">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="price1" alignment="CENTER" layoutX="123.0" layoutY="204.0" prefHeight="23.0" prefWidth="87.0" text="¥00.00" textFill="#ffa75e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="available1" alignment="CENTER_RIGHT" layoutX="221.0" layoutY="204.0" prefHeight="23.0" prefWidth="143.0" text="有票" textFill="#8c8c8c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="book1" contentDisplay="CENTER" layoutX="394.0" layoutY="200.0" mnemonicParsing="false" onAction="#book1" prefHeight="28.0" prefWidth="70.0" text="预订">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="book2" contentDisplay="CENTER" layoutX="393.0" layoutY="248.0" mnemonicParsing="false" onAction="#book2" prefHeight="28.0" prefWidth="70.0" text="预订">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="available2" alignment="CENTER_RIGHT" layoutX="221.0" layoutY="252.0" prefHeight="23.0" prefWidth="143.0" text="有票" textFill="#8c8c8c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price2" alignment="CENTER" layoutX="122.0" layoutY="252.0" prefHeight="23.0" prefWidth="87.0" text="¥00.00" textFill="#ffa75e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="type2" alignment="CENTER" layoutX="38.0" layoutY="252.0" prefHeight="23.0" prefWidth="70.0" text="二等座">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="book3" contentDisplay="CENTER" layoutX="395.0" layoutY="296.0" mnemonicParsing="false" onAction="#book3" prefHeight="28.0" prefWidth="70.0" text="预订">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="available3" alignment="CENTER_RIGHT" layoutX="222.0" layoutY="300.0" prefHeight="23.0" prefWidth="143.0" text="有票" textFill="#8c8c8c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price3" alignment="CENTER" layoutX="124.0" layoutY="300.0" prefHeight="23.0" prefWidth="87.0" text="¥00.00" textFill="#ffa75e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="type3" alignment="CENTER" layoutX="40.0" layoutY="300.0" prefHeight="23.0" prefWidth="70.0" text="二等座">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="book4" contentDisplay="CENTER" layoutX="394.0" layoutY="343.0" mnemonicParsing="false" onAction="#book4" prefHeight="28.0" prefWidth="70.0" text="预订">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="available4" alignment="CENTER_RIGHT" layoutX="221.0" layoutY="347.0" prefHeight="23.0" prefWidth="143.0" text="有票" textFill="#8c8c8c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price4" alignment="CENTER" layoutX="123.0" layoutY="347.0" prefHeight="23.0" prefWidth="87.0" text="¥00.00" textFill="#ffa75e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="type4" alignment="CENTER" layoutX="39.0" layoutY="347.0" prefHeight="23.0" prefWidth="70.0" text="二等座">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line fx:id="line11" endX="470.0" endY="230.0" fill="#c6c6c6" layoutX="10.0" layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.44" startX="30.0" startY="230.0" stroke="#c6c6c6" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+      <Line fx:id="line2" endX="470.0" endY="265.0" fill="#c6c6c6" layoutX="10.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.44" startX="30.0" startY="265.0" stroke="#c6c6c6" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+      <Line fx:id="line3" endX="470.0" endY="320.0" fill="#c6c6c6" layoutX="10.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.44" startX="30.0" startY="320.0" stroke="#c6c6c6" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+   </children>
+</AnchorPane>

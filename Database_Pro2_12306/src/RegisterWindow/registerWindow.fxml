@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterWindow.RegisterWindowController">
+   <children>
+      <Button fx:id="yesButton" layoutX="113.0" layoutY="594.0" mnemonicParsing="false" onAction="#changeToMainWindow" prefHeight="55.0" prefWidth="109.0" text="是" />
+      <Button fx:id="noButton" layoutX="270.0" layoutY="592.0" mnemonicParsing="false" onAction="#changeToLoginWindow" prefHeight="55.0" prefWidth="109.0" text="否" />
+      <Label layoutX="166.0" layoutY="107.0" prefHeight="39.0" prefWidth="242.0" text="没有找到此用户，">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="146.0" prefHeight="39.0" prefWidth="242.0" text="请问要创建吗？">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameTextField" layoutX="161.0" layoutY="232.0" prefHeight="39.0" prefWidth="180.0" promptText="First name" />
+      <TextField fx:id="lastNameTextField" layoutX="161.0" layoutY="311.0" prefHeight="39.0" prefWidth="180.0" promptText="Last name" />
+      <TextField fx:id="phoneNumberTextField" layoutX="161.0" layoutY="385.0" prefHeight="39.0" prefWidth="180.0" promptText="Phone number" />
+      <TextField fx:id="idCardTextField" layoutX="161.0" layoutY="460.0" prefHeight="39.0" prefWidth="180.0" promptText="ID card" />
+   </children>
+</AnchorPane>

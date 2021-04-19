@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginWindow.LoginWindowController">
+   <children>
+      <Button fx:id="loginButton" layoutX="148.0" layoutY="489.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="69.0" prefWidth="205.0" text="登录" />
+      <TextField fx:id="userNameTextField" layoutX="108.0" layoutY="341.0" prefHeight="59.0" prefWidth="285.0" promptText="User Phone Number" />
+      <Button fx:id="quitButton" layoutX="148.0" layoutY="595.0" mnemonicParsing="false" onAction="#quitProgramme" prefHeight="69.0" prefWidth="205.0" text="退出" />
+      <Label layoutX="205.0" layoutY="746.0" text="江海洋  赵奕帆">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="220.0" text="12306铁路系统">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
